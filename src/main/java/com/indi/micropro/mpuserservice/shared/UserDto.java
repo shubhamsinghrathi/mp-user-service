@@ -1,6 +1,9 @@
 package com.indi.micropro.mpuserservice.shared;
 
 import java.io.Serializable;
+import java.util.List;
+
+import com.indi.micropro.mpuserservice.model.AlbumResponseModel;
 
 import lombok.Data;
 
@@ -16,4 +19,5 @@ public class UserDto implements Serializable {
 	private String password;
 	private String userId;
 	private String encryptedPassword;
+	private List<AlbumResponseModel> albums;
 }
